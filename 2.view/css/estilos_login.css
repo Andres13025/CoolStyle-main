@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.contenido{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 10px;
+}
+.boton{
+    background: black;
+    color: white;
+    width: 71%;
+    height: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 5px;
+}
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-bottom: 5vh;
+}
+.caja1 {
+    width: 70%;
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+.caja2{
+    width: 70%;
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+.direccion{
+    color: black;
+}

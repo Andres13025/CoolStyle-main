@@ -3,7 +3,7 @@
 include_once "../controller/crud.php";
 $modelo = new administrar();
 $resultado = $modelo->mostrar_reclamos();
-echo "<a href='../index.php'>Atras</a><br>";
+echo "<a href='../1.menu/indice.php'>Atras</a><br>";
 echo "<a href='agregar.php'>Agregar datos</a>";
     echo "<table border='1' width='60%'>";
     echo "<tr>";

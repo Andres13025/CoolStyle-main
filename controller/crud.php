@@ -26,12 +26,12 @@
             $stmt->bindparam(':precio', $precio);
             $stmt->bindparam(':talla', $talla);
             $stmt->execute();
-            header('Location: ../producto/producto.php');
+            header('Location: ../7.1_producto/producto.php');
         }
         public function eliminar($id){
             $stmt = $this->conexion->prepare("DELETE FROM producto WHERE codigo_pr=$id");
             $stmt->execute();
-            header('Location: ../producto/producto.php');
+            header('Location: ../7.1_producto/producto.php');
         }
         public function ObtenerDatos($id){
             $stmt = $this->conexion->prepare("SELECT * FROM producto WHERE codigo_pr=$id");
@@ -49,7 +49,7 @@
             $stmt->bindparam(':precio', $precio);
             $stmt->bindparam(':talla', $talla);
             $stmt->execute();
-            header('Location: ../producto/producto.php');
+            header('Location: ../7.1_producto/producto.php');
         }
         //yo2 - reclamos
         public function mostrar_reclamos(){
@@ -68,12 +68,12 @@
             $stmt->bindparam(':observaciones', $observaciones);
             $stmt->bindparam(':codigo_e1', $codigo_e1);
             $stmt->execute();
-            header('Location: ../reclamos/reclamos.php');
+            header('Location: ../7.5_reclamos/reclamos.php');
         }
         public function eliminar_reclamos($id){
             $stmt = $this->conexion->prepare("DELETE FROM reclamos WHERE codigo_r=$id");
             $stmt->execute();
-            header('Location: ../reclamos/reclamos.php');
+            header('Location: ../7.5_reclamos/reclamos.php');
         }
         public function ObtenerDatos_reclamos($id){
             $stmt = $this->conexion->prepare("SELECT * FROM reclamos WHERE codigo_r=$id");
@@ -89,7 +89,7 @@
             $stmt->bindparam(':observaciones', $observaciones);
             $stmt->bindparam(':codigo_e1', $codigo_e1);
             $stmt->execute();
-            header('Location: ../reclamos/reclamos.php');
+            header('Location: ../7.5_reclamos/reclamos.php');
         }
         //pablo
         public function visualizar(){
@@ -110,12 +110,12 @@
               $stmt->bindparam(':metodo', $metodo);
               $stmt->bindparam(':codigo', $codigo);
               $stmt->execute();
-              header('Location: envio.php');
+              header('Location: ../7.2_envio/envio.php');
           }
           public function quitar($id){
               $stmt = $this->conexion->prepare("DELETE FROM envio WHERE codigo_e=$id");
               $stmt->execute();
-              header('Location: envio.php');
+              header('Location: ../7.2_envio/envio.php');
           }
           public function ImprimirDatos($id){
               $stmt = $this->conexion->prepare("SELECT * FROM envio WHERE codigo_e=$id");
@@ -131,7 +131,7 @@
               $stmt->bindparam(':metodo_e',$metodo);
               $stmt->bindparam(':codigo_p3',$codigop);
               $stmt->execute();
-              header('Location: envio.php');
+              header('Location: ../7.2_envio/envio.php');
           }
           //jonathan
           public function mostrar_proveedor(){
@@ -154,12 +154,12 @@
             $stmt->bindparam(':telefono', $telefono);
             $stmt->bindparam(':correo', $correo);
             $stmt->execute();
-            header('Location: proveedor.php');
+            header('Location: ../7.3_proveedor/proveedor.php');
         }
         public function eliminar_proveedor($id){
             $stmt = $this->conexion->prepare("DELETE FROM proveedor WHERE codigo_a=$id");
             $stmt->execute();
-            header('Location: proveedor.php');
+            header('Location: ../7.3_proveedor/proveedor.php');
         }
         public function ObtenerDatos_proveedor($id){
             $stmt = $this->conexion->prepare("SELECT * FROM proveedor WHERE codigo_a=$id");
@@ -177,7 +177,7 @@
             $stmt->bindparam(':telefono', $telefono);
             $stmt->bindparam(':correo', $correo);
             $stmt->execute();
-            header('Location: proveedor.php');
+            header('Location: ../7.3_proveedor/proveedor.php');
         }
         //dick
         public function mostrar_pedido(){
@@ -205,12 +205,12 @@
             $stmt->bindparam(':color', $color);
             $stmt->bindparam(':carrito', $carrito);
             $stmt->execute();
-            header('Location: pedido_p.php');
+            header('Location: ../7.4_pedido_p/pedido_p.php');
         }
         public function eliminar_pedido($id){
             $stmt = $this->conexion->prepare("DELETE FROM pedido WHERE codigo_p=$id");
             $stmt->execute();
-            header('Location: pedido_p.php');
+            header('Location: ../7.4_pedido_p/pedido_p.php');
         }
         public function ObtenerDatos_pedido($id){
             $stmt = $this->conexion->prepare("SELECT * FROM pedido WHERE codigo_p=$id");
@@ -230,7 +230,7 @@
             $stmt->bindparam(':color', $color);
             $stmt->bindparam(':carrito', $carrito);
             $stmt->execute();
-            header('Location: pedido_p.php');
+            header('Location: ../7.4_pedido_p/pedido_p.php');
         }
     }
 ?>
