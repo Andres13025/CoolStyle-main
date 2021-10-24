@@ -20,7 +20,7 @@
                 <input class="boton" type="submit" value="Registrate">
             </form>
             <p>Al registrarse, aceptas nuestras Condiciones de uso y Politicas de privacidad</p>
-            <p id="final">¿Ya tienes una cuenta? <a href="login.php">Iniciar Sesion</a></p>
+            <p id="final">¿Ya tienes una cuenta? <a href="../3.login/login.php">Iniciar Sesion</a></p>
         </div>
     </section>
     <?php
