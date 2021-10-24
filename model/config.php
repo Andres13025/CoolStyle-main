@@ -1,9 +1,9 @@
 <?php
 //ESTRUCTURADO
-$server = 'localhost';
-$database = 'coolstyle';
-$usuario = 'root';
-$password = '';
+$server = 'btibuy9uvhaujjwxul6o-mysql.services.clever-cloud.com';
+$database = 'btibuy9uvhaujjwxul6o';
+$usuario = 'uvk3cic7kntjqwio';
+$password = 'jUsHhVPat7EFnHyBwOOc';
     
 try{
     $conn = new PDO("mysql:host=$server;dbname=$database;",$usuario, $password);
@@ -14,10 +14,10 @@ try{
 //ORIENTADO A OBJETOS
 class Conexiondb {
     public function conectar(){
-        $localhost = "localhost";
-        $database = "coolstyle";
-        $user = "root";
-        $password = "";
+        $localhost = "btibuy9uvhaujjwxul6o-mysql.services.clever-cloud.com";
+        $database = "btibuy9uvhaujjwxul6o";
+        $user = "uvk3cic7kntjqwio";
+        $password = "jUsHhVPat7EFnHyBwOOc";
         $link = new PDO("mysql:host=$localhost;dbname=$database",$user,$password);
         //return var_dump($link);
         return $link;
