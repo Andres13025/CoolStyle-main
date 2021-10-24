@@ -11,9 +11,9 @@
         <form action="../6.verificacion/verificacion.php" method="post">
             <div class="contenido">
                 <h1 class="titulo">Inicio</h1>
-                    <input type="text" class="caja1" placeholder="Username o email" name="usuario"><br>
+                    <input autofocus type="text" class="caja1" placeholder="Username o email" name="usuario" value="" required><br>
             
-                    <input type="password" class="caja2" placeholder="Password" name="pass"><br>
+                    <input type="password" class="caja2" placeholder="Password" name="pass" value="" required><br>
         
                     <input class="boton" type="submit" value="Ingresar"><br>
                     
