@@ -20,10 +20,9 @@ a {
 * {
 	box-sizing: border-box;
 }
-h1{
-color: black;
-top: 98px; 
-left: 20px;
+
+#algo{
+    border: solid black 1px;
 }
 
 .login{

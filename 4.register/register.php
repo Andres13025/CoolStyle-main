@@ -19,7 +19,7 @@
 
                 <input required id="boton_register" class="boton" type="submit" value="Registrate">
             </form>
-            <p> Aceptar <a href="../2.view/reg/recibir_registrarse.php">Terminos y Condiciones de uso y Politicas de privacidad</a></p>
+            <p> Aceptar <a href="../2.view/reg/politicas.php"><b><i>Al registrarse Aceptar los Terminos Y Condiciones de privacidad</i></b></a></p>
             <p id="final">¿Ya tienes una cuenta? <a href="../3.login/login.php">Iniciar Sesion</a></p>
         </div>
     </section>
@@ -31,5 +31,4 @@
         endif;
     ?>
 </body>
-<script src="valid.js"></script>
 </html>
