@@ -6,8 +6,8 @@
     <title>Registro</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="#" />      
-    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">	         
-    <link rel="stylesheet" href="jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../2.view/css/registro/bootstrap4/css/bootstrap.min.css">	         
+    <link rel="stylesheet" href="../2.view/css/registro/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css">
 	  <style>
         @import url("https://fonts.googleapis.com/css?family=Lato");
         html,
@@ -80,7 +80,7 @@
                 <input required name="nombre" class="caja" placeholder="Nombre Completo" type="text">
                 <input required name="usuario" class="caja" placeholder="Correo Electronico" type="text">
                 <input required name="pass" class="caja" placeholder="Contraseña" type="password">
-                <input required id="boton_register" class="boton" type="submit" value="Registrate">
+                <input required name="Submit" id="boton_register" class="boton" type="submit" value="Registrate">
             </form>
             <p class="info">
                 <span id="btn3">Al registrarse Acepta los Terminos Y Condiciones de privacidad</span>
@@ -212,8 +212,6 @@
     </div>
   </div>
 </div>  
-
-    
     <?php
         if(!empty($message)):
     ?>
@@ -221,12 +219,10 @@
     <?php
         endif;
     ?>
-
-
-    <script src="jquery/jquery-3.3.1.min.js"></script>	 	
-    <script src="popper/popper.min.js"></script>	 	 	
-    <script src="bootstrap4/js/bootstrap.min.js"></script>   	
-    <script src="jqueryUI/jquery-ui-1.12.1/jquery-ui.min.js"></script>  
-    <script src="codigo.js"></script> 
+    <script src="../2.view/css/registro/jquery/jquery-3.3.1.min.js"></script>	 	
+    <script src="../2.view/css/registro/popper/popper.min.js"></script>	 	 	
+    <script src="../2.view/css/registro/bootstrap4/js/bootstrap.min.js"></script>   	
+    <script src="../2.view/css/registro/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.js"></script>  
+    <script src="../2.view/css/registro/codigo.js"></script> 
 </body>
 </html>

@@ -6,6 +6,23 @@
             $this->conexion = Conexiondb::conectar();
         }
         //yo - producto
+
+        public function agregar_usuarionuevo($nombre, $usuario, $pass){
+            $sql = "INSERT INTO cliente (nombre, usuario, pass) VALUES (:nombre, :usuario, :pass)";
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->bindParam(':nombre',$nombre);
+            $stmt->bindParam(':usuario',$usuario);
+            $password = password_hash($pass, PASSWORD_BCRYPT);
+            $stmt->bindParam(':pass', $password);
+
+            if($stmt->execute()){
+                /*$mensaje = 'Successfully created new user';*/
+                header('Location: ../3.login/login.php');
+            }else{
+                $mensaje = 'Sorry there must have been an issue creating your password';
+            }
+
+        }
         public function mostrar(){
             $hola = $this->conexion->prepare("SELECT codigo_pr, nombre_producto, cantidad, precio, 
             talla FROM producto ORDER BY codigo_pr");
