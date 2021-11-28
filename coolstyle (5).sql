@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-11-2021 a las 19:48:46
+-- Tiempo de generación: 28-11-2021 a las 02:19:42
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 7.4.21
 
@@ -34,7 +34,8 @@ CREATE TABLE `cliente` (
   `pass` varchar(200) NOT NULL,
   `direccion` varchar(100) NOT NULL,
   `telefono` varchar(100) NOT NULL
-); 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Volcado de datos para la tabla `cliente`
 --
@@ -47,7 +48,11 @@ INSERT INTO `cliente` (`codigo_c`, `nombre`, `usuario`, `pass`, `direccion`, `te
 (12, 'julian torres', 'juliantorres@gmail.com', '$2y$10$O79Tgkl0tcJWdHPhlXzeeu61DrJNZ5gLQLV9b8.rDbG.MHdFF8SYe', '', ''),
 (13, 'carlos andres valero', 'cavvid@hotmail.com', '$2y$10$TzthaupoxwRa0bw46U3peuc1m8CVntsXS62tayjLCR0X5GGYy3Gwq', '', ''),
 (14, 'jonathan pascagaza', 'jonathan@gmail.com', '$2y$10$qi40W1mKZv4oRCDFppdzsekvZn7BVkiUhz71RGZRjq9QW2OXG5g7C', '', ''),
-(15, 'parce', 'parce@gmail.com', '$2y$10$p1ZctY5Q5aE2JNzPqnsJrO7J/nJkRLDo0dYq8kBatDb8L0Blen1Nq', '', '');
+(15, 'parce', 'parce@gmail.com', '$2y$10$p1ZctY5Q5aE2JNzPqnsJrO7J/nJkRLDo0dYq8kBatDb8L0Blen1Nq', '', ''),
+(16, 'nestor', 'nestor@gmail.com', '$2y$10$CYJocFWnPmE/rG5rVF/MseiFvPMJMZ15cF.mYofXdGtxxzr4PHRGa', '', ''),
+(17, 'nestor', 'nestor@gmail.com', '$2y$10$59hsk.Etzp8WX1qdk4RS0eB5fX/xV3mLsEhHVrU/PEdHDhUmhN8my', '', ''),
+(18, 'prueba', 'prueba@gmail.com', '$2y$10$xscZ7jFnOXuYsZUzStP0Ne2S9N/5ta5OzKQQUWjWK8QvJG2XtndEG', '', ''),
+(19, 'prueba', 'prueba@gmail.com', '$2y$10$cujv5KcqK/ySQVb9kk3LTOzQ8CPGjCTZ3CjfP486qFW7pCfZ4X6tS', '', '');
 
 -- --------------------------------------------------------
 
@@ -60,15 +65,14 @@ CREATE TABLE `envio` (
   `fecha_e` date NOT NULL,
   `metodo_e` varchar(100) NOT NULL,
   `codigo_p3` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `envio`
 --
 
 INSERT INTO `envio` (`codigo_e`, `fecha_e`, `metodo_e`, `codigo_p3`) VALUES
-(7, '2020-11-19', 'servientrega', 2),
-(20, '2021-03-12', 'servientrega', 2);
+(3, '2021-11-10', 'servientrega', 1);
 
 -- --------------------------------------------------------
 
@@ -84,15 +88,14 @@ CREATE TABLE `pedido` (
   `marca` varchar(50) NOT NULL,
   `color` varchar(50) NOT NULL,
   `carrito` varchar(100) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `pedido`
 --
 
 INSERT INTO `pedido` (`codigo_p`, `calle`, `ciudad`, `fecha_p`, `marca`, `color`, `carrito`) VALUES
-(3, 'calle 100 cr 45-23', 'BOGOTA', '2020-11-18', 'adidas', 'blanco', 'SI'),
-(11, 'calle 100', 'bogota', '2021-01-23', 'puma', 'rojo', 'SI');
+(1, 'Calle 300', 'bogota', '2021-11-02', 'Nike', 'rojo', 'si');
 
 -- --------------------------------------------------------
 
@@ -106,7 +109,7 @@ CREATE TABLE `producto` (
   `cantidad` int(11) NOT NULL,
   `precio` bigint(20) NOT NULL,
   `talla` varchar(10) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `producto`
@@ -133,7 +136,7 @@ CREATE TABLE `proveedor` (
   `direccion` varchar(100) NOT NULL,
   `telefono` varchar(15) NOT NULL,
   `correo` varchar(100) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `proveedor`
@@ -153,15 +156,14 @@ CREATE TABLE `reclamos` (
   `codigo_r` int(11) NOT NULL,
   `observaciones` varchar(200) NOT NULL,
   `codigo_e1` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `reclamos`
 --
 
 INSERT INTO `reclamos` (`codigo_r`, `observaciones`, `codigo_e1`) VALUES
-(1, 'tenis demasiado pequenos las medidas no concuerdan', 1),
-(9, 'prueba de queja', 3);
+(3, 'observaciones', 3);
 
 -- --------------------------------------------------------
 
@@ -172,7 +174,7 @@ INSERT INTO `reclamos` (`codigo_r`, `observaciones`, `codigo_e1`) VALUES
 CREATE TABLE `tabla_union1` (
   `codigo_c1` int(11) NOT NULL,
   `codigo_p1` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -183,7 +185,7 @@ CREATE TABLE `tabla_union1` (
 CREATE TABLE `tabla_union2` (
   `codigo_p2` int(11) NOT NULL,
   `codigo_pr1` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -194,7 +196,7 @@ CREATE TABLE `tabla_union2` (
 CREATE TABLE `tabla_union3` (
   `codigo_pr2` int(11) NOT NULL,
   `codigo_a1` int(11) NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
@@ -267,19 +269,19 @@ ALTER TABLE `tabla_union3`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `codigo_c` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `codigo_c` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `envio`
 --
 ALTER TABLE `envio`
-  MODIFY `codigo_e` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `codigo_e` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `codigo_p` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `codigo_p` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
@@ -297,6 +299,46 @@ ALTER TABLE `proveedor`
 -- AUTO_INCREMENT de la tabla `reclamos`
 --
 ALTER TABLE `reclamos`
-  MODIFY `codigo_r` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `codigo_r` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `envio`
+--
+ALTER TABLE `envio`
+  ADD CONSTRAINT `envio_ibfk_1` FOREIGN KEY (`codigo_p3`) REFERENCES `pedido` (`codigo_p`);
+
+--
+-- Filtros para la tabla `reclamos`
+--
+ALTER TABLE `reclamos`
+  ADD CONSTRAINT `reclamos_ibfk_1` FOREIGN KEY (`codigo_e1`) REFERENCES `envio` (`codigo_e`);
+
+--
+-- Filtros para la tabla `tabla_union1`
+--
+ALTER TABLE `tabla_union1`
+  ADD CONSTRAINT `tabla_union1_ibfk_1` FOREIGN KEY (`codigo_c1`) REFERENCES `cliente` (`codigo_c`),
+  ADD CONSTRAINT `tabla_union1_ibfk_2` FOREIGN KEY (`codigo_p1`) REFERENCES `pedido` (`codigo_p`);
+
+--
+-- Filtros para la tabla `tabla_union2`
+--
+ALTER TABLE `tabla_union2`
+  ADD CONSTRAINT `tabla_union2_ibfk_1` FOREIGN KEY (`codigo_p2`) REFERENCES `pedido` (`codigo_p`),
+  ADD CONSTRAINT `tabla_union2_ibfk_2` FOREIGN KEY (`codigo_pr1`) REFERENCES `producto` (`codigo_pr`);
+
+--
+-- Filtros para la tabla `tabla_union3`
+--
+ALTER TABLE `tabla_union3`
+  ADD CONSTRAINT `tabla_union3_ibfk_1` FOREIGN KEY (`codigo_a1`) REFERENCES `proveedor` (`codigo_a`),
+  ADD CONSTRAINT `tabla_union3_ibfk_2` FOREIGN KEY (`codigo_pr2`) REFERENCES `producto` (`codigo_pr`);
 COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
