@@ -1,0 +1,47 @@
+version: "3"
+
+services:
+  sonarqube:
+    image: sonarqube
+    expose:
+      - 9000
+    ports:
+      - "127.0.0.1:9000:9000"
+    networks:
+      - sonarnet
+    environment:
+      - sonarqube.jdbc.url=jdbc:postgresql://db/sonar
+      - sonarqube.jdbc.username=sonar
+      - sonarqube.jdbc.password=sonar
+    volumes:
+      - sonarqube_conff:/opt/sonarqube/conf
+      - sonarqube_dataa:/opt/sonarqube/data
+      - sonarqube_extensionss:/opt/sonarqube/extensions
+      - sonarqube_bundled-pluginss:/opt/sonarqube/lib/bundled-plugins
+
+  db:
+    image: postgres
+    expose:
+      - 5432
+    ports:
+      - "127.0.0.1:5432:5432"
+    networks:
+      - sonarnet
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+      - POSTGRES_DB=sonar
+    volumes:
+      - postgresqll:/var/lib/postgresql
+      - postgresql_dataa:/var/lib/postgresql/data
+
+networks:
+  sonarnet:
+
+volumes:
+  sonarqube_conff:
+  sonarqube_dataa:
+  sonarqube_extensionss:
+  sonarqube_bundled-pluginss:
+  postgresqll:
+  postgresql_dataa:
