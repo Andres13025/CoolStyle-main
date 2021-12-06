@@ -219,7 +219,7 @@
                     <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
                     <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
                     <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
+                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ACCESSORIOS</a> </li>
                 </ul>
             </nav>
         </div>
