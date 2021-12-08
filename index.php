@@ -163,7 +163,7 @@
     <div >
         <header class="nombre" style="heigth:90px;" >
             <input type="image" src="2.view/image/index/favicon2.png" width="130px" height="90px">
-            <a href="">
+            <a href="index.php">
               <input type="image" src="2.view/image/index/tituloCoolStyle.PNG" width="300px" height="90px" >
             </a>
         </header>
@@ -215,11 +215,11 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
-                    <li><a href="https://www.google.es" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
+                    <li><a href="2.view/categorias/ropamujer.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
+                    <li><a href="2.view/categorias/ropahombre.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
+                    <li><a href="2.view/categorias/ropaelegante.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
+                    <li><a href="2.view/categorias/ropadeportiva.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
+                    <li><a href="2.view/categorias/accesorios.php" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
                 </ul>
             </nav>
         </div>

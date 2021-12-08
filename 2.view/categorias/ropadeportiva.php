@@ -90,11 +90,11 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="../categorias/ropamujer.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
-                    <li><a href="../categorias/ropahombre.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
-                    <li><a href="../categorias/ropaelegante.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
-                    <li><a href="../categorias/ropadeportiva" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
-                    <li><a href="../categorias/accesorios" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
+                    <li><a href="ropamujer.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
+                    <li><a href="ropahombre.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
+                    <li><a href="ropaelegante.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
+                    <li><a href="accesorios.php" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
                 </ul>
             </nav>
         </div>
@@ -102,9 +102,9 @@
 
     <br><br><br><br><br><br><br>
     <div>
-    <h2>Soporte</h2>
+    <h2>Ropa Deportiva</h2>
       <p>
-        Soporte
+        Ropa Deportiva
       </p>
     </div>
 
