@@ -1,0 +1,56 @@
+#marco{
+    width: 46%;
+    margin: 1px 27%;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+#productpay{
+    width: 50%;
+    margin: 5px 25%;
+    
+}
+
+#prize{
+    text-align: center;
+}
+
+#pagesmethod{
+    width: 70%;
+    margin: 1px 15%;
+}
+
+#divtable{
+    width: 60%;
+    margin: 1px 20%;
+}
+
+.imgformpay{
+    width: 50px;
+
+}
+
+#icon4{
+    width: 37px;
+}
+
+#icon5{
+    width: 37px;
+}
+
+#icon7{
+    width: 37px;
+}
+
+#pagespayexecute{
+    width: 40%;
+    height: 150px;
+    margin: 1px 30%;
+}
+
+.buttonmethodpay{
+    width: 80%;
+    height: 50%;
+    margin: 0 10%;
+    background-color: rgb(214, 214, 214);
+}

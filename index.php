@@ -71,7 +71,7 @@
         </div>
       </div>
     <div class="card6 text-center" style="width: 20rem; left: 1%; position: absolute; top: 1550px; background-color: #fff;background-clip: border-box;border: 1px solid rgba(0,0,0,.125);border-radius: .25rem; ">
-      <a href="https://www.google.es"><img src="2.view/image/index/clasica.PNG" class="card2-img-top" alt="..." style="width: 100%; height: 352px;" ></a>
+      <a href="2.view/detallecompra/detallecompra.php"><img src="2.view/image/index/clasica.PNG" class="card2-img-top" alt="..." style="width: 100%; height: 352px;" ></a>
       <div class="card6-body" >
           <p class="card6-text"><H5>PRECIO-COSTO <buttontype="button" class="btn btn-dark">añadir al carrito</button></H5></p>
         </div>
