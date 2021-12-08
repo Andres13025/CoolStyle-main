@@ -215,11 +215,11 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="2.view/categorias/ropamujer.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
-                    <li><a href="2.view/categorias/ropahombre.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
-                    <li><a href="2.view/categorias/ropaelegante.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
-                    <li><a href="2.view/categorias/ropadeportiva.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
-                    <li><a href="2.view/categorias/accesorios.php" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
+                    <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
+                    <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
+                    <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
+                    <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DEPORTIVA</a></li>
+                    <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ACCESORIOS</a> </li>
                 </ul>
             </nav>
         </div>
