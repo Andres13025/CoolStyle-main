@@ -1,8 +1,8 @@
 <?php
-    $server = 'localhost';
-    $database = 'coolstyle';
-    $usuario = 'root';
-    $password = '';
+    $server = 'btibuy9uvhaujjwxul6o-mysql.services.clever-cloud.com';
+    $database = 'btibuy9uvhaujjwxul6o';
+    $usuario = 'uvk3cic7kntjqwio';
+    $password = 'jUsHhVPat7EFnHyBwOOc';
     
 
     try{
@@ -10,7 +10,5 @@
     }catch(PDOException $e){
         die('Connected failed: '.$e->getMessage());
     }
-
-
 
 ?>
