@@ -215,6 +215,7 @@
 
             <nav class="menu">
                 <ul>
+                  
                     <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;" >&#9898; ROPA DE MUJER </a></li>
                     <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ROPA DE HOMBRE</a></li>
                     <li><a href="2.view/filtro/filtro.php" style="text-decoration: none; color: #fff;">&#9898; ROPA ELEGANTE</a></li>
