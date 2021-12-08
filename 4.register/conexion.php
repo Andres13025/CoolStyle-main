@@ -4,7 +4,6 @@
     $usuario = 'uvk3cic7kntjqwio';
     $password = 'jUsHhVPat7EFnHyBwOOc';
     
-
     try{
         $conn = new PDO("mysql:host=$server;dbname=$database;",$usuario, $password);
     }catch(PDOException $e){

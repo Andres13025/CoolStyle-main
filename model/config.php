@@ -3,7 +3,7 @@
  $server = 'btibuy9uvhaujjwxul6o-mysql.services.clever-cloud.com';
  $database = 'btibuy9uvhaujjwxul6o';
  $usuario = 'uvk3cic7kntjqwio';
- $password = 'jUsHhVPat7EFnHyBwOOc';
+ $password = 'CrcLHSIuGW6tDsUJ5fPQ';
 
 // $server = 'localhost';
 // $database = 'coolstyle';
@@ -22,7 +22,7 @@ class Conexiondb {
          $localhost = "btibuy9uvhaujjwxul6o-mysql.services.clever-cloud.com";
          $database = "btibuy9uvhaujjwxul6o";
          $user = "uvk3cic7kntjqwio";
-         $password = "jUsHhVPat7EFnHyBwOOc";
+         $password = "CrcLHSIuGW6tDsUJ5fPQ";
 
         // $localhost = "localhost";
         // $database = "coolstyle";
