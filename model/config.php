@@ -30,7 +30,7 @@ class Conexiondb {
         // $password = "";
         
         $link = new PDO("mysql:host=$localhost;dbname=$database;",$user,$password);
-        return var_dump($link);
+        //return var_dump($link);
         return $link;
     }
 }
