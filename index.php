@@ -155,7 +155,7 @@
     <!-- -------------------------------------------------------------------------------- -->
     <div >
       <header class="carrito">
-        <a href="https://www.google.es">
+        <a href="2.view/">
           <input  type="image" src="2.view/image/index/carrito.PNG.jpg" width="100px" height="60px">
         </a>
       </header>
