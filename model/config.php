@@ -28,8 +28,9 @@ class Conexiondb {
         // $database = "coolstyle";
         // $user = "root";
         // $password = "";
-        $link = new PDO("mysql:host=$localhost;dbname=$database",$user,$password);
-        //return var_dump($link);
+        
+        $link = new PDO("mysql:host=$localhost;dbname=$database;",$user,$password);
+        return var_dump($link);
         return $link;
     }
 }
