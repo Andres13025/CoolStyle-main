@@ -1,0 +1,203 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200em;
+    
+}
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px 10px 10px;
+}
+.form-group input{
+    padding-left: 42px;
+    font-size: 18px;
+   height: 100px;
+   width: 700px;
+    padding-left: 90px;
+    
+}
+.form-group#user-group::before{
+    content: "\f007";
+}
+.form-group::before{
+    font-family: "font Awesome 5 free";
+    position: absolute;
+    left: 30px;
+    font-size: 50px;
+    
+
+}
+
+.rating{
+    position: absolute;
+    top: 612px;
+    left: 325px;
+    transform: translate(-50%,-50%) rotatey(180deg);
+    display: flex;
+}
+.rating input{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 60px;
+    padding-left: 10px;
+
+}
+.rating label::before{
+    content: '\f005';
+    font-family: 'font Awesome 5 free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+
+}
+.rating label::after{
+    content: '\f005';
+    font-family: 'font Awesome 5 free';
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    display: block;
+    color: yellow;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after{
+    opacity: 1;
+} 
+
+/* Some initial styling */
+
+* {
+	box-sizing: border-box;
+}
+h1{
+color: black;
+top: 98px; 
+left: 20px;
+}
+
+.login{
+    
+    height: 50px;
+    position: fixed;
+    left: 73%;
+    top: 0px;
+   
+}
+.fondodelbuscador{
+    width: 42.5%;
+    height: 90px;
+    position: fixed;
+    left: 31.5%;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+   
+}
+.buscador{
+    top: 10px;
+    width: 400px;
+   
+}
+.botonbuscador{
+    width: 90%;
+}
+
+.nombre{
+    
+    height: 70px;
+    position: fixed;
+    left: 0PX;
+    top: 0px;
+    background-color: white;
+   
+}
+.carrito{
+    
+    height: 60px;
+    position: fixed;
+    left: 90%;
+    top: 90px;
+    background-color: rgb(0, 0, 0);
+}
+.soporte{
+    height: 50px;
+    position: fixed;
+    left: 85%;
+    top: 0px;
+}
+
+.menupri{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    right: 10%;
+    top: 90px;
+   background-color: rgb(0, 0, 0); 
+   
+}
+.card{
+    left:20% ;
+    top: 200px ;
+    
+   
+}
+
+.carrusel{
+    left: 5%;
+    position: absolute;
+    width: 35%;
+    top: 155PX;
+    height: 100px;
+}
+
+
+#check:checked ~ .menu{
+    width: 400px;
+}
+.menu{
+    position: fixed;
+    top: 150px;
+    width: 0px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.822);
+    transition: all 500ms cubic-bezier(1,0,0,1);
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    overflow: hidden;
+    
+}
+.menu li{
+    top: 150px;
+    list-style: none;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    display: block;
+    width: 400px;
+}
+.content-all label{
+    top: 150px;
+    position: fixed;
+    width: 100%;
+    max-width: 1000px;
+    
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+.content-all{
+    top: 150px;
+}
