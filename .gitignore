@@ -1,2 +1,6 @@
 #ignora los archivos del escaner
 .scannerwork
+composer.json
+composer.lock
+vendor
+ejemplounittest
