@@ -2,9 +2,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="../fontawesome/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="../1.menu/style.css">
 </head>
-<?php
+    <header>
+        <a id="titulo" href="index.html" class="logo">CoolStyle</a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="../7.1_producto/producto.php" >PRODUCTO</a></li>
+            <li><a href="../7.2_envio/envio.php" >ENVIO</a></li>
+            <li><a href="../7.3_proveedor/proveedor.php" >PROVEEDOR</a></li>
+            <li><a href="../7.4_pedido_p/pedido_p.php" >PEDIDO</a></li>
+            <li><a href="../7.5_reclamos/reclamos.php" >RECLAMOS</a></li>
+            <li><a href="../5.logout/logout.php">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
 
+<?php
 include_once "../controller/crud.php";
 $modelo = new administrar();
 $resultado = $modelo->mostrar();
@@ -49,6 +63,7 @@ $resultado = $modelo->mostrar();
 
 
 ?>
+
 
 <!-- Modal -->
 <form action='agregar.php' method='post'>
