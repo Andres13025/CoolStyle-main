@@ -7,8 +7,6 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css” rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
-    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="../fontawesome/css/all.css" rel="stylesheet"> 
 </head>
 <body>
@@ -72,26 +70,5 @@
 
 </body>
 </html>
-<script>
-    $(document).ready(function () {
-        $("#button").click();
-        $("iframe1").attr("src","indice.php");
-        $("#producto").on("click", function(){
-            $("#iframe1").attr("src","../7.1_producto/producto.php"); 
-        });
-        $("#envio").on("click", function(){
-          $("#iframe1").attr("src","../7.2_envio/envio.php");
-        });
-        $("#proveedor").on("click", function(){
-          $("#iframe1").attr("src","../7.3_proveedor/proveedor.php");
-        });
-        $("#pedido").on("click", function(){
-          $("#iframe1").attr("src","../7.4_pedido_p/pedido_p.php");
-        });
-        $("#reclamos").on("click",function(){
-          $("#iframe1").attr("src","../7.5_reclamos/reclamos.php");
-        });
-    });
-    
-</script>
+
 
