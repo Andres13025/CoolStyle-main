@@ -48,8 +48,7 @@ if(isset($_POST['Submit'])){
     $precio = $_POST['precio'];
     $talla = $_POST['talla'];
     
-    print_r($id ,$codigo ,$nombre ,$cantidad ,$precio ,$talla);
-    //$resultado = $modelo_e->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
+    $resultado = $modelo_e->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
     
 }else{
     echo "no enviado";
