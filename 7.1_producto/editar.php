@@ -1,6 +1,5 @@
 <?php
     include_once "../controller/crud.php";
-    require_once '../model/config.php';
     $id = $_GET['id'];
     $modelo_o = new administrar();
     $modelo_e = new administrar();
@@ -49,25 +48,8 @@ if(isset($_POST['Submit'])){
     $cantidad = $_POST['cantidad'];
     $precio = $_POST['precio'];
     $talla = $_POST['talla'];
-
-    //$resultado = $modelo_e->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
-
     
-        $records =$conn->prepare("UPDATE producto SET codigo_pr=:codigo_pr, 
-        nombre_producto=:nombre, cantidad=:cantidad, precio=:precio, talla=:talla WHERE codigo_pr=:id");
-        $records->bindParam(':id',$_POST['oculto']);
-        $records->bindParam(':codigo_pr',$_POST['codigo']);
-        $records->bindParam(':nombre',$_POST['nombre']);
-        $records->bindParam(':cantidad',$_POST['cantidad']);
-        $records->bindParam(':precio',$_POST['precio']);
-        $records->bindParam(':talla',$_POST['talla']);
-
-        if($records->execute()){
-            /*$mensaje = 'Successfully created new user';*/
-            header('Location: ../7.1_producto/producto.php');
-        }else{
-            $mensaje = 'Sorry there must have been an issue creating your password';
-        }
+    $resultado = $modelo_e->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
     
 }else{
     echo "no enviado";
