@@ -41,17 +41,35 @@
 </form>";
 
 if(isset($_POST['Submit'])){
+    
     $id = $_POST['oculto'];
     $codigo = $_POST['codigo'];
     $nombre = $_POST['nombre'];
     $cantidad = $_POST['cantidad'];
     $precio = $_POST['precio'];
     $talla = $_POST['talla'];
+
+    print_r($id);
+    print_r($codigo);
+    print_r($nombre);
+    print_r($cantidad);
+    print_r($precio);
+    print_r($talla);
     
     $resultado = $modelo_e->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
+
+
     
 }else{
     echo "no enviado";
+    print_r($id);
+    print_r($codigo);
+    print_r($nombre);
+    print_r($cantidad);
+    print_r($precio);
+    print_r($talla);
+
+    print_r($resultado);
 }
 
 ?>
