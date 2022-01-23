@@ -67,15 +67,15 @@ if($method == "OPTIONS") {
         }
         public function editar($id, $codigo, $nombre, $cantidad, $precio, $talla){
 
-            $stmt = $this->conexion->prepare("UPDATE producto SET codigo_pr=:codigo_pr, 
-            nombre_producto=:nombre, cantidad=:cantidad, precio=:precio, talla=:talla WHERE codigo_pr=:id");
-            $stmt->bindparam(':id', 19);
-            $stmt->bindparam(':codigo_pr', 19);
-            $stmt->bindparam(':nombre', 'tennist');
-            $stmt->bindparam(':cantidad', 10);
-            $stmt->bindparam(':precio', 10000);
-            $stmt->bindparam(':talla', 30);
-            $stmt->execute();
+            $stmt = $this->conexion->prepare("UPDATE producto SET codigo_pr = ?, 
+            nombre_producto = ?, cantidad = ?, precio = ?, talla = ? WHERE codigo_pr = ?");
+            //$stmt->bindparam(':id', 19);
+            //$stmt->bindparam(':codigo_pr', 19);
+            //$stmt->bindparam(':nombre', 'tennist');
+            //$stmt->bindparam(':cantidad', 10);
+            //$stmt->bindparam(':precio', 10000);
+            //$stmt->bindparam(':talla', 30);
+            $stmt->execute([19,'tenissss',100,10000,30,19]);
             header('Location: ../7.1_producto/producto.php');
         }
         //yo2 - reclamos
