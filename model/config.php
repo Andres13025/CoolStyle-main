@@ -24,10 +24,10 @@ class Conexiondb {
          $user = "uvk3cic7kntjqwio";
          $password = "CrcLHSIuGW6tDsUJ5fPQ";
 
-        $localhost = "localhost";
-        $database = "coolstyle";
-        $user = "root";
-        $password = "";
+        //$localhost = "localhost";
+        //$database = "coolstyle";
+        //$user = "root";
+        //$password = "";
         
         try{
             $link = new PDO("mysql:host=$localhost;dbname=$database;",$user, $password);
