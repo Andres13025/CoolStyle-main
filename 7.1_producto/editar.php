@@ -50,10 +50,21 @@ if(isset($_POST['Submit'])){
     $precio = $_POST['precio'];
     $talla = $_POST['talla'];
 
+
+    echo '<script language="javascript">console.log("hola")</script>';
+    echo '<script language="javascript">console.log('.$id.')</script>';
+    echo '<script language="javascript">console.log('.$codigo.')</script>';
+    echo '<script language="javascript">console.log('.$nombre.')</script>';
+    echo '<script language="javascript">console.log('.$cantidad.')</script>';
+    echo '<script language="javascript">console.log('.$precio.')</script>';
+    echo '<script language="javascript">console.log('.$talla.')</script>';
+    
+
     try {
         $modelo_asd->editar($id, $codigo, $nombre, $cantidad, $precio, $talla);
     } catch (Exception $th) {
         echo $th->getMessage();
+        echo '<script language="javascript">alert('.$th->getMessage().');</script>';
     }
     
     
