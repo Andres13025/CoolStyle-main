@@ -5,8 +5,9 @@
     $modelo_e = new administrar();
     $datos = $modelo_o->ObtenerDatos($id);//este solo trae los datos que seran editados
 
-    //print_r($datos);
-    //echo $datos['identificacion'];
+    print_r($datos);
+    echo $datos['identificacion'];
+    echo '<script language="javascript">console.log("hola")</script>';
 
     
 
