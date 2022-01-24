@@ -2,7 +2,6 @@
     include_once "../controller/crud.php";
     $id = $_GET['id'];
     $modelo_o = new administrar();
-    $modelo_e = new administrar();
     $datos = $modelo_o->ObtenerDatos_reclamos($id);//este solo trae los datos que seran editados
 
     //print_r($datos);
@@ -31,16 +30,5 @@
         </tr>
     </table>
 </form>";
-
-if(isset($_POST['Submit'])){
-    $id = $_POST['oculto'];
-    $codigo_r = $_POST['codigo_r'];
-    $observaciones = $_POST['observaciones'];
-    $codigo_e1 = $_POST['codigo_e1'];
-    $resultado = $modelo_e->editar_reclamos($id, $codigo_r, $observaciones, $codigo_e1);
-    
-}else{
-    echo "no enviado";
-}
 
 ?>

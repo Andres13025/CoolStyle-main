@@ -2,7 +2,6 @@
     include_once "../controller/crud.php";
     $id = $_GET['id'];
     $modelo_o = new administrar();
-    $modelo_e = new administrar();
     $datos = $modelo_o->ObtenerDatos_proveedor($id);//este solo trae los datos que seran editados
 
     //print_r($datos);
@@ -10,7 +9,7 @@
 
     
 
-    echo "<form action='editar.php' method='post'>
+    echo "<form action='jeditar.php' method='post'>
     <table>
         <tr>
             <td>Codigo</td>
@@ -40,17 +39,6 @@
     </table>
 </form>";
 
-if(isset($_POST['Submit'])){
-    $id = $_POST['oculto'];
-    $codigo_a = $_POST['codigo_a'];
-    $nombre_proveedor = $_POST['nombre_proveedor'];
-    $direccion = $_POST['direccion'];
-    $telefono = $_POST['telefono'];
-    $correo = $_POST['correo'];
-    $resultado = $modelo_e->editar_proveedor($id, $codigo_a, $nombre_proveedor, $direccion, $telefono, $correo);
-    
-}else{
-    echo "no enviado";
-}
+
 
 ?>

@@ -2,10 +2,9 @@
     include_once "../controller/crud.php";
     $id = $_GET['id'];
     $modelo_I = new administrar();
-    $modelo_a = new administrar();
     $datos = $modelo_I->ImprimirDatos($id);
 
-    echo "<form action='actualizar.php' method='post'>
+    echo "<form action='jeditar.php' method='post'>
     <table>
         <tr>
             <td>Fecha envio</td>
@@ -27,14 +26,4 @@
     </table>
 </form>";
 
-if(isset($_POST['Submit'])) {
-    $id = $_POST['oculto'];
-    $fecha = $_POST['fecha'];
-    $metodo = $_POST['metodo'];
-    $codigo = $_POST['codigo'];
-    $resultado = $modelo_a->actualizar($id, $fecha, $metodo, $codigo);
-    
-}else {
-    echo "no enviado";
-}
 ?>
