@@ -69,11 +69,11 @@ if($method == "OPTIONS") {
             
             $stmt = $this->conexion->prepare("UPDATE producto SET codigo_pr=:codigo_pr, 
             nombre_producto=:nombre, cantidad=:cantidad, precio=:precio, talla=:talla WHERE codigo_pr=:id");
-            $stmt->bindparam(':id', $id);
-            $stmt->bindparam(':codigo_pr', $codigo);
+            $stmt->bindparam(':id', $id, PDO::PARAM_INT);
+            $stmt->bindparam(':codigo_pr', $codigo, PDO::PARAM_INT);
             $stmt->bindparam(':nombre', $nombre);
-            $stmt->bindparam(':cantidad', $cantidad);
-            $stmt->bindparam(':precio', $precio);
+            $stmt->bindparam(':cantidad', $cantidad, PDO::PARAM_INT);
+            $stmt->bindparam(':precio', $precio, PDO::PARAM_INT);
             $stmt->bindparam(':talla', $talla);
             $stmt->execute();
             header('Location: ../7.1_producto/producto.php');
